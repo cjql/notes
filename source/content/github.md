@@ -270,3 +270,4 @@ readme.md：项目说明。（如何：安装、使用、自动化测试、对�
 
 https://github.com/twbs/bootstrap#status    
 例子    
+[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/) 
