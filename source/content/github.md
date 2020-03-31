@@ -203,3 +203,67 @@ http://blog.sina.com.cn/s/blog_4e60b09d0102vcso.html
 
 ## 参考书    
 GitHub入门，李新叶，Introducing GitHub，Peter Bell& Brent Beer，2015年8月。（无源码）  
+## GitHub选项卡    
+code    仓库文件列表。简要说明和URL    
+commit 当前分支的提交历史    
+branches 分支列表    
+releases 标签列表    
+可以将标签加入时的文件以归档形势（zip、tar.gz）下载到本地。软件在升级时一般需要打标签。    
+https://git-scm.com/book/zh/v2/Git-基础-打标签  
+像其他版本控制系统（VCS）一样，Git 可以给历史中的某一个提交打上标签，以示重要。 比较有代表性的是人们会使用这个功能来标记发布结点（v1.0 等等）。 在本节中，你将会学习如何列出已有的标签、如何创建新标签、以及不同类型的标签分别是什么。    
+### contributors pull requests被采纳的人数+作者    
+pulse、commit history：工作进展。    
+commit：保存修改。    code和commit处都可以选分支，查看分支的历史要切换到待查的分支。    
+commit message：提交消息。what、why、where（好在哪）。    
+branch：新功能。    
+feature branch：功能分支。    
+master：提供发布。    
+release branch：发布分支。Bug必修的分支。    
+tag：标签。可用于记录发布版本。    
+check out：查看。    
+issue：需求（旧Bug报告和新性能添加）。方向性讨论功能，跟踪缺陷。Pull Request时会自动创建Issue。数字是**Open**状态的Issue数。    
+PR(pull requests)：拉请求。请人复查分支历史流，并请求合并。最新变化和讨论。目前处于工作状态的所有不同功能。列表查看并管理。数字是Open的PR数量。正在做什么，每个修改的当前状态。    
+merge PR ：仅对贡献者可见。    
+revert the merge：回退合并。    
+merge前可修改PR（修改时切换到PR所在的分支），以供审查和反馈。    
+merge前最好自己clone并运行。也可交给测试团队或部门做。    
+右边退订和订阅pull（评论、@、提交、合并、关闭）    
+多去评论，以帮助项目改善质量    
+fork：分叉。到个人账户或组织。参与这个库开发的人数。可自行修改、提交。PR后可提交到最初的（被fork的）项目。    
+branch + PR（pull requests）：分支协作。    
+releases：发布的版本个数。    
+watch：关注。该仓库的更新信息都会显示在用户的公开活动中。    
+star：喜欢。做书签用。反应仓库的受关注程度。判断仓库热门程度的指标。    
+wiki：内容管理系统。便捷的链接页面。readme太长 ⇒ 用户文档和开发文档（待修bug、待加功能）。仅支持公开库。    
+settings。当前仓库的设置。    
+Options。    
+GitHub Pages：可直接在settings中设置。需公开库或者Pro。内容是readme的内容。    
+Collaborators    
+Branches    
+Webhooks：issue、PR自动发送到项目。（用于项目管理、Bug跟踪、自动化测试的持续集成服务器）    
+Notifications    
+Integrations & services    
+Deploy keys    
+Secrets    
+Actions    
+Insight    
+SSH clone URL：克隆仓库时所需要的URL。    
+Referring sites：访客来之前访问的网站。    
+Pulse：显示该仓库最近的活动。issue和Pull Requests。周期可调。additions and deletions：增删行数。修改一行=增一行+删一行    
+Contributors：贡献值图（master exclude merge）。主图可分块拉取，以查看时间段内的情况。（私有库需额外添加合作者）    
+Community    
+Traffic：仅贡献者可见。访客信息。以图表形式显示该仓库的各项指标。    
+Commits：每周提交数。下图是上图被选中的周期块对应的日内分解图。    
+Code frequency：码频图。看显著变化，尤其是重构。    
+Dependency graph    
+. Network：分支数。以图表行政显示仓库当前的状态及fork出的状态。同时会显示成员列表。    
+. Forks：成员列表。     
+顶层（根目录）、文件夹（目录）。    
+../移动到父目录。    
+git只关心文件，无法将空文件夹添加到项目。约定：想建空文件夹就加.gitkeep文件。        
+readme.md：项目说明。（如何：安装、使用、自动化测试、对项目作贡献）    
+徽章（本质是用图片做显示的套娃）https://shields.io/    
+依赖项目及其版本    
+自动测试正在通过（passing）    
+依赖关系是最新的    
+适应的浏览器和操作系统版本    
