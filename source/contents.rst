@@ -11,6 +11,7 @@ Welcome to notes's documentation!
    :caption: Contents:
 
    content/ReadtheDocs
+   content/git
    content/github
 
 
