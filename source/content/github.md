@@ -37,3 +37,169 @@ Git的优势：
 IDE    
 多个重命名    
 离线    
+
+## 区分    
+### download zip 与git clone    
+download zip：单纯下载到本地，无法查看日志和对仓库进行修改    
+https://www.prestonlamb.com/blog/creating-a-docker-image-with-github-actions    
+### issue和PR    
+* issue：未做的，可以和master无关    
+* PR：已修bug和新增功能，但尚未合并。必须有master和分支    
+### labels 和 milestone    
+* lables：可同时多个。可按字母和issue数排序。    
+* milestone。只能有一个。可用来做deadline。可按更新时间、完成度（同milestone中关闭的issue占比）、到期、字母、issue数排序    
+## 大文件传输    
+https://git-lfs.github.com/    
+* 下载，安装    
+* bash移动路径到对应仓库    
+* git init    
+* git lfs install    
+* touch .gitattributes    
+* git lfs track "*.pdf"    
+* git lfs track "*.epub"    
+* git add .gitattributes    
+* git add *.epub    
+* git commit -m "Add design file"    
+* git remote add origin https://github.com/cqlj/allitebooks    
+* git push origin master    
+重复6、8、9、10、11    
+```bash    
+Git LFS has been disabled on your personal account cqlj because you’ve exceeded your data plan by at least 150%. Please purchase additional data packs to cover your bandwidth and storage usage:    
+https://github.com/account/billing/data/upgrade    
+Current usage as of 11 Jan 2020 09:20PM UTC:    
+Bandwidth: 0.0 GB / 1 GB (0%)    
+Storage: 7.37 GB / 1 GB (737%)    
+```    
+## 远程操控    
+```bash    
+git init    
+echo "## allitebooks" >> README.md    
+git add README.md    
+git add -A(add all files)    
+git commit -m "first commit"    
+git remote add origin git@github.com:cqlj/allitebooks.git    
+## git remote -v (for checking current repository)    
+## git pull --rebase origin master    
+git push -u origin master    
+```     
+## Errors    
+**Updating the Git index failed**    
+参考：[stackoverflow](https://stackoverflow.com/questions/10573815/why-is-updating-the-git-index-failed-displayed)    
+```    
+git config --global core.autocrlf false    
+```    
+```    
+Updating the Git index failed.    A rescan will be automatically started to resynchronize git-gui.    
+warning: LF will be replaced by CRLF in source/categories/index.md.    
+The file will have its original line endings in your working directory    
+```    
+
+**Sorry, we had to truncate this directory to 1,000 files.**    
+Large files detected. You may want to try    
+[Git_Large_File_Storage](https://git-lfs.github.com)    
+[**中文乱码**](https://www.cnblogs.com/scale/p/6258457.html)    
+git config --global i18n.commitencoding utf-8    
+git config --global i18n.logoutputencoding gbk    
+git config --global gui.encoding utf-8    
+https://services.github.com/    GitHub产品大全，包括Learning Lab、Developer API等    
+## 其他    
+https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository    
+https://tecadmin.net/delete-commit-history-in-github/    
+https://gist.github.com/stephenhardy/5470814    
+https://github.com/cjql/archive/wiki/_history    
+★MEMO★    
+[shortcuts](https://help.github.com/en/articles/using-keyboard-shortcuts)    
+[tips](https://blog.csdn.net/neilol/article/details/46568611)    
+★update★    
+[cjql](https://www.gitmemory.com/cjql)    
+[issue](https://github.com/issues?q=is%3Aissue+author%3Acjql+sort%3Aupdated-desc)    
+[repo](https://github.com/search?o=desc&q=user%3Acjql+&s=updated&type=Repositories)    
+[wiki](https://github.com/cjql/webs/wiki/_history)    
+[wikis](https://github.com/search?o=desc&q=user%3Acjql+&s=updated&type=Wikis)    
+★scan★    
+[repos](https://github.com/settings/repositories)    
+[watching](https://github.com/watching)    
+[trending](https://github.com/trending)    
+[封禁用户](https://github.com/settings/blocked_users)    
+[贡献墙](https://github-contributions.now.sh/)    
+[changelog](https://github.blog/changelog/)    
+[cheatsheet](https://github.com/tiimgreen/github-cheat-sheet/)    
+[cheatsheet](https://github.github.com/training-kit/downloads/zh_CN/github-git-cheat-sheet/)    
+[cheatsheetzh](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md)    
+[GitDoc](https://git-scm.com/book/en/v2)    
+[stanford](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/)    
+[geeeeeeeeek](https://github.com/geeeeeeeeek/git-recipes)    
+[廖雪峰](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)    
+[阳志平](https://www.yangzhiping.com/tech/github.html)    
+[中文教程](https://github.com/gotgit/gotgithub)    
+[gitimmersion](http://gitimmersion.com/index.html)    
+[Version Control](https://www.git-tower.com/learn/)    
+[美化git ](http://justinhileman.info/article/git-pretty/)    
+[ sharing](http://codemancers.com/blog/posts/2014-05-01-using-git-for-knowledge-sharing/)    
+★gitignore★    
+[Create](https://www.gitignore.io/)    
+[Joe](https://karan.goel.io/joe/)    
+[csdn](https://blog.csdn.net/qq19414123/article/details/53435591)    
+[segmentfault](https://segmentfault.com/q/1010000004164312?_ea=513255)    
+[branch](https://learngitbranching.js.org/)    
+[python](https://github.com/vinta/awesome-python)    
+[others](https://github.com/sindresorhus/awesome)    
+[API](https://api.github.com/users/cjql)    
+[labels](https://developer.github.com/v3/issues/labels/)    
+[shields](https://github.com/badges/shields)    
+[hosts](https://github.com/racaljk/hosts)    
+[Sourcetree](https://www.sourcetreeapp.com/)    
+[hosts](http://gogs.io/)    
+[censorship](https://github.com/citizenlab/chat-censorship)    
+[teleirc](https://github.com/FruitieX/teleirc)    
+★Famous★    
+[Google](https://github.com/google)    
+[Apple](https://github.com/apple)    
+[Facebook](https://github.com/facebook)    
+[Twitter](https://github.com/twitter)    
+[Microsoft](https://github.com/microsoft)    
+[Square](https://github.com/square)    
+[alibaba](https://github.com/alibaba)    
+[linux](https://github.com/torvalds/linux)    
+[rails](https://github.com/rails/rails)    
+[NodeJS](https://github.com/nodejs/node)    
+[Swift](https://github.com/apple/swift)    
+[Coffeescript](https://github.com/jashkenas/coffeescript)    
+[Ruby](https://github.com/ruby/ruby)    
+[Torvalds](https://github.com/torvalds)    
+[Dhh](https://github.com/dhh)    
+[JakeWharton](https://github.com/JakeWharton)    
+★學習教程★    
+[try](https://try.github.io/)    
+[githug: Git your game on](https://github.com/Gazler/githug)    
+[githug通关攻略](http://lingavin.com/githugtong-guan-gong-lue.html)    
+[git-game: terminal game to test git skills ](https://github.com/git-game/git-game)    
+[Learn Git Branching:形象直观的图形化练习网站。](https://learngitbranching.js.org/)    
+[伯乐在线:git详解系列](http://blog.jobbole.com/tag/pro-git/)    
+[猴子都能懂的Git入门](http://backlogtool.com/git-guide/cn/)    
+[GitHub上的12个骚操作](https://segmentfault.com/a/1190000011380397)    
+[bitbucket的教程](https://www.atlassian.com/git?atl_source=cac-bitbucket-1&atl_medium=ace&atl_campaign=ACE-158-Stash-GIT-on-Bitbucket-CAC_git")    
+https://blog.csdn.net/chaishen10000    
+
+## 搜索    
+私有库的code也能被搜索到。    
+默认搜索是从master分支搜索代码，只有小于384k的代码才是可以搜索到的    
+https://github.com/search/advanced    
+https://github.com/issues?q=author:cjql+sort:updated-desc+label:    
+https://help.github.com/categories/searching-for-information-on-github/    
+https://github.com/search?q=icon+size:>200000+extension:css&type=Code    
+https://github.com/search?q=minitest+filename:test_helper    匹配文件名    
+https://github.com/search?q=icon+size:>200000+extension:css&type=Code    
+https://github.com/search?q=octocat+in:file&type=Code     文件    
+https://github.com/search?q=octocat+in:path&type=Code    路径    
+https://github.com/search?q=octocat+in:file,path&type=Code    文件或路径    
+https://github.com/search?q=display+language:scss&type=Code    语言    
+https://github.com/search?q=Integer&type=Code    关键词    
+https://github.com/search?q=element+language:xml+size:100&type=Code    大小    
+https://github.com/search?q=user:cjql    
+https://github.com/search?q=user:cjql+php    作者    
+https://github.com/search?q=user:cjql+"公元前613年"&type=Issues    精确匹配    
+http://blog.sina.com.cn/s/blog_4e60b09d0102vcso.html    
+
+## 参考书    
+GitHub入门，李新叶，Introducing GitHub，Peter Bell& Brent Beer，2015年8月。（无源码）  
