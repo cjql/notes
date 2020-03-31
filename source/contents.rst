@@ -10,6 +10,8 @@ Welcome to notes's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   content/ReadtheDocs
+
 
 
 Indices and tables
