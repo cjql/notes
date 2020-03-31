@@ -269,3 +269,4 @@ readme.md：项目说明。（如何：安装、使用、自动化测试、对�
 适应的浏览器和操作系统版本    
 
 https://github.com/twbs/bootstrap#status    
+徽章 https://github.com/cjql/00diary/issues/130  
