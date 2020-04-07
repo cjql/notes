@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'notes'
+project = 'cjnote'
 copyright = '2020, cj'
 author = 'cj'
 
